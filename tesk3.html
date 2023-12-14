@@ -1,0 +1,39 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Money Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Money Tracker</h1>
+
+        <div class="balance">
+            <p>Balance: $<span id="balance">0.00</span></p>
+        </div>
+
+        <form id="transactionForm">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount" required>
+
+            <label for="type">Type:</label>
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+
+            <button type="button" onclick="addTransaction()">Add Transaction</button>
+        </form>
+
+        <div id="transactionList">
+            <!-- Transaction list will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
